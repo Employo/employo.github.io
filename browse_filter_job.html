@@ -50,7 +50,13 @@
 	.card-header:hover{
 		box-shadow:0px 1px 10px brown;
 	}
-	
+	@media screen and (max-width:10000px) and (min-width:3000px) {
+		.cid-qYDX9QdNfW{
+			position:fixed;
+			bottom:0px;
+			width:100%;
+		}
+	}
   </style>
   
 </head>
@@ -276,7 +282,54 @@
 </section>
 
 <br><br><br>
+
 <!-- Footer -->
+
+<section class="cid-qYDX9QdNfW" id="footer5-8">
+    <div class="container">
+        <div class="media-container-row">
+            <div class="col-md-3">
+                <div class="media-wrap">
+                    <a href="">
+                       <img src="assets/images/lg-155x140.png" alt="" title="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <p class="mbr-text align-right links mbr-fonts-style display-7">
+                    <a href="#contactModal" data-toggle="modal" data-target="#contactModal"  class="text-white">CONTACT</a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-lower">
+            <div class="media-container-row">
+                <div class="col-md-12">
+                    <hr>
+                </div>
+            </div>
+            <div class="media-container-row mbr-white">
+                <div class="col-md-6 copyright">
+                    <p>
+                        <span style="font-size: 1rem;">© Copyright 2018 - 2019 &nbsp; - All Rights Reserved</span></p>
+                </div>
+                <div class="col-md-6">
+                    <div class="social-list align-right">
+                        <div class="soc-item">
+                            <a href="https://www.linkedin.com/company/employo/">
+                                <span class="mbr-iconfont mbr-iconfont-social socicon-linkedin socicon" style="color: rgb(255, 255, 255); font-size: 30px;"></span>
+                            </a>
+                        </div>
+                        <div class="soc-item">
+                            <a href="https://www.facebook.com/employo/?modal=composer" target="_blank">
+                                <span class="mbr-iconfont mbr-iconfont-social socicon-facebook socicon" style="color: rgb(255, 255, 255); font-size: 30px;"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 
 <!-- Sign Up Modal -->
@@ -291,36 +344,90 @@
         <button type="button" class="close" data-dismiss="modal">&times;</button>
       </div>
       <div class="modal-body">
-        
+        <div class="signuptabs">
+			<div class="row">
+				<div class="col-md-6">
+					<span class="tablinks runn" onclick="openCity(event, 'Student')" id="signuptb">Students</span> &nbsp; 
+				</div>
+				<div class="col-md-6">
+					<span class="tablinks" onclick="openCity(event, 'Employers')" id="signuptb">Employers</span>
+				</div>
+			</div>
+			
+		</div>
 		
-		<form class="form-group">
-			<div class="container">
-			<div class="">
-				<a href="signup_student.html" style="display:inline-block;padding-bottom:5px;font-weight:bold;background:#37419B;color:#fff;padding:10px;">Students</a> &nbsp; <a href="signup_employe.html" style="display:inline-block;padding-bottom:5px;font-weight:bold;background:#37419B;color:#fff;padding:10px;">Employers</a>
-			</div>
-			<div id="InsertSuccess"></div>
-			<div id="InsertError"></div>
-				<p>SIGN UP TO EXPLORE JOBS</p>
-				<hr>
-				<div class="form-group">
-				  <input type="text" class="form-control" placeholder="Username" id="txt_uname" name="txt_uname" required autofocus>
-				  <div id="uname_response" class="response"></div>
+		<div class="tabcontent" id="Student">
+			<form action="signup_student.html" class="form-group">
+				<div class="container">
+				<div id="InsertSuccess"></div>
+				<div id="InsertError"></div>
+					<p>SIGN UP TO EXPLORE JOBS</p>
+					<hr>
+					
+					<div class="form-group">
+					  <input type="email" class="form-control" id="txt_uemail" placeholder="Email" name="txt_uemail" required>
+					  <div id="uemail_response" class="response"></div>
+					</div>
+					<div class="form-group">
+					  <input type="password" class="form-control" id="pass1" placeholder="Password" name="pass1" required>
+					</div>
+					<div class="form-group">
+					  <input type="password" class="form-control" id="pass2" placeholder="Confirm Password" name="pass2" required>
+					</div>
+					<div class="checkbox">
+					  <label> <input type="checkbox" name="privacy" required> By creating an account you agree to our <a href="#">Terms & Privacy</a>. </label>
+					</div>
+					<input type="submit" class="btn btn-primary display-4" name="submit" id="submit" value="Sign Up">
 				</div>
-				
-				<div class="form-group">
-				  <input type="email" class="form-control" id="txt_uemail" placeholder="Email" name="txt_uemail" required>
-				  <div id="uemail_response" class="response"></div>
+			</form>
+		</div>
+		
+		<div class="tabcontent" id="Employers">
+			<form action="signup_employe.html" class="form-group">
+				<div class="container">
+				<div id="InsertSuccess"></div>
+				<div id="InsertError"></div>
+					<p>SIGN UP TO HIRE YOUR NEXT INTERN</p>
+					<hr>
+					
+					
+					<div class="form-group">
+					  <input type="email" class="form-control" id="txt_uemail" placeholder="Email" name="txt_uemail" required>
+					  <div id="uemail_response" class="response"></div>
+					</div>
+					<div class="form-group">
+					  <input type="password" class="form-control" id="pass1" placeholder="Password" name="pass1" required>
+					</div>
+					<div class="form-group">
+					  <input type="password" class="form-control" id="pass2" placeholder="Confirm Password" name="pass2" required>
+					</div>
+					<div class="checkbox">
+					  <label> <input type="checkbox" name="privacy" required> By creating an account you agree to our <a href="#">Terms & Privacy</a>. </label>
+					</div>
+					<input type="submit" class="btn btn-primary display-4" name="submit" id="submit" value="Sign Up">
 				</div>
-				<div class="form-group">
-				  <input type="password" class="form-control" id="pass1" placeholder="Password" name="pass1" required>
-				</div>
-				<div class="checkbox">
-				  <label> <input type="checkbox" name="privacy" required> By creating an account you agree to our <a href="#">Terms & Privacy</a>. </label>
-				</div>
-				<input type="button" class="btn btn-primary display-4" name="submit" id="submit" value="Sign Up">
-			</div>
-		</form> 
+			</form>
+		</div>
+		
       </div>
+	  
+	  <!-- Show Next Tab -->
+		<script>
+		function openCity(evt, cityName) {
+			var i, tabcontent, tablinks;
+			tabcontent = document.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" runn", "");
+			}
+			document.getElementById(cityName).style.display = "block";
+			evt.currentTarget.className += " runn";
+		}
+		</script>
+		
 	  <div class="modal-footer" style="background:#eee;">
 			Already have an account? <a href="#" data-toggle="modal" data-target="#login" data-dismiss="modal">&nbsp; Sign in. &nbsp; </a>
 		</div>

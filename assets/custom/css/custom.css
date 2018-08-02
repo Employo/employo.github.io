@@ -2248,11 +2248,11 @@ body {
   background: none;
   color:#37419B;
   border-radius:90px;
-  text-transform: uppercase;
-  padding: 10px 30px;
+  padding: 15px 35px;
   cursor: pointer;
   border:1px solid #37419B;
   margin-bottom:20px;
+  outline:none;
 }
  
  #job_post_btn:hover{

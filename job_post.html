@@ -27,7 +27,15 @@
 			width:100%;
 		}
 	}
-	
+	#textshowchange{
+		display:none;
+	}
+	#textshowchanget{
+		display:none;
+	}
+	.unpintext{
+		display:none;
+	}
   </style>
 </head>
 <body style="overflow-x:hidden;">
@@ -100,7 +108,7 @@
 		<div class="row">
 			<div class="col-md-12">
 				<h4 style="color:#37419B;font-weight:normal;font-family:OpenSans-Regular;;">Applicants sorted according to job criteria match accuracy</h4>
-				<a href="#" style="font-style:italic;color:#37419B !important;font-family:OpenSans-Regular;">Sort Differently</a>
+				
 			</div>
 		</div><br>
 	</div>
@@ -129,8 +137,20 @@
 					<div class="col-md-3">
 						
 						<span style="color:orange;"> Applied 20 hrs ago </span> <br><br>
-						<a href="#" id="job_post_btn"> Request Interview </a><br>
-						<a href="#" id="job_post_btn"> <img src="assets/images/pin_blue.png" style="width:15px;"> &nbsp; PIN </a>
+						<button  id="job_post_btn" class="changText"> <div id="textshow">  Request Interview</div>
+						
+							<div id="textshowchange"> <img src="assets/images/tick.png" id="tickmark" style="width:15px;"> Interview Requested</div>
+						
+						</button>
+						<br>
+						<button id="job_post_btn" class="pinchange">
+							<div class="pintext">
+								<img src="assets/images/pin_blue.png" style="width:15px;"> &nbsp; PIN 
+							</div>
+							<div class="unpintext">
+								<img src="assets/images/unpin_blue.png" style="width:15px;"> &nbsp; UNPIN 
+							</div>
+						</button>
 						<div style="text-align:right;" id="tabarrow">
 							<img src="assets/images/appdown.png" style="width:50px;cursor:pointer;">
 						</div>
@@ -160,6 +180,9 @@
 	<br><br>
 </section>
 
+
+
+
 <section class="job_posts_profile">
 	<div class="container">
 		<div class="row" style="background:#FFFFFFF;padding:20px;">
@@ -182,7 +205,12 @@
 					<div class="col-md-3">
 						
 						<span style="color:orange;"> Applied 20 hrs ago </span> <br><br>
-						<a href="#" id="job_post_btn"> Request Interview </a><br>
+						<button id="job_post_btn" class="changTextt"> <div id="textshowt">  Request Interview</div>
+						
+							<div id="textshowchanget"> <img src="assets/images/tick.png" id="tickmark" style="width:15px;"> Interview Requested</div>
+						
+						</button>
+						<br>
 						<a href="#" id="job_post_btn"> <img src="assets/images/pin_blue.png" style="width:15px;"> &nbsp; PIN </a>
 						<div style="text-align:right;" id="tabarrowtwo">
 							<img src="assets/images/appdown.png" style="width:50px;cursor:pointer;">
@@ -384,7 +412,23 @@
   <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
   <script src="assets/theme/js/script.js"></script>
   <script src="assets/formoid/formoid.min.js"></script>
-  
+  <script>
+  $(document).ready(function(){
+	
+	$(".changText").click(function(){
+		$("#textshow").css({"display":"none"});
+		$("#textshowchange").css({"display":"block"});
+	});
+	
+	$(".changTextt").click(function(){
+		$("#textshowt").css({"display":"none"});
+		$("#textshowchanget").css({"display":"block"});
+	});
+	
+	
+  });
+	
+  </script>
   <script>
 	$(document).ready(function(){
 		$("#tabdetails").hide();
