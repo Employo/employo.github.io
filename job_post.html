@@ -55,7 +55,7 @@
         <div class="menu-logo">
             <div class="navbar-brand">
                <span class="navbar-logo">
-                    <a href="index.html">
+                    <a href="index_employee.html">
                         <img src="assets/images/lg-122x110.png" alt="Logo" title="" style="height: 48px;">
                     </a>
                 </span>
@@ -143,12 +143,9 @@
 						
 						</button>
 						<br>
-						<button id="job_post_btn" class="pinchange">
+						<button id="job_post_btn" class="pinchange" onclick="myFunction()">
 							<div class="pintext">
-								<img src="assets/images/pin_blue.png" style="width:15px;"> &nbsp; PIN 
-							</div>
-							<div class="unpintext">
-								<img src="assets/images/unpin_blue.png" style="width:15px;"> &nbsp; UNPIN 
+								<img src="assets/images/pin_blue.png" style="width:15px;" id="imgsrc"> &nbsp; <span id="myDIV">PIN</span>
 							</div>
 						</button>
 						<div style="text-align:right;" id="tabarrow">
@@ -158,7 +155,19 @@
 				</div>
 			</div>
 		</div>
-		
+		<script>
+function myFunction() {
+    var x = document.getElementById("myDIV");
+	var getimg = document.getElementById("imgsrc");
+    if (x.innerHTML === "PIN") {
+        x.innerHTML = "<img src='assets/images/unpin_blue.png' style='width:15px;'> UNPIN";
+		getimg.style.display = "none";
+    } else {
+        x.innerHTML = "PIN";
+		getimg.style.display = "inline-block";
+    }
+}
+</script>
 		<div class="row" style="padding-top:30px;padding-left:29px;" id="tabdetails">
 			<div class="col-md-12">
 				
@@ -211,7 +220,11 @@
 						
 						</button>
 						<br>
-						<a href="#" id="job_post_btn"> <img src="assets/images/pin_blue.png" style="width:15px;"> &nbsp; PIN </a>
+						<button id="job_post_btn" class="pinchange" onclick="myFunctions()">
+							<div class="pintext">
+								<img src="assets/images/pin_blue.png" style="width:15px;" id="imgsrcs"> &nbsp; <span id="myDIVs">PIN</span>
+							</div>
+						</button>
 						<div style="text-align:right;" id="tabarrowtwo">
 							<img src="assets/images/appdown.png" style="width:50px;cursor:pointer;">
 						</div>
@@ -219,6 +232,20 @@
 				</div>
 			</div>
 		</div>
+		
+		<script>
+function myFunctions() {
+    var x = document.getElementById("myDIVs");
+	var getimg = document.getElementById("imgsrcs");
+    if (x.innerHTML === "PIN") {
+        x.innerHTML = "<img src='assets/images/unpin_blue.png' style='width:15px;'> UNPIN";
+		getimg.style.display = "none";
+    } else {
+        x.innerHTML = "PIN";
+		getimg.style.display = "inline-block";
+    }
+}
+</script>
 		
 		<div class="row" style="padding-top:30px;padding-left:29px;" id="tabdetailstwo">
 			<div class="col-md-12">
