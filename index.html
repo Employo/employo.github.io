@@ -43,7 +43,7 @@
   </style>
   
 </head>
-<body>
+<body style="overflow-x:hidden;">
 
 <!-- Menu bar -->
 
@@ -106,6 +106,7 @@
             </div>
         </div>
     </div> 
+	
 </section>
 
 
@@ -213,7 +214,7 @@
                         </a>
                     </div>
 			</div>
-		</div>
+		</div><br><br>
 	</div>
 </section>
 
@@ -413,11 +414,17 @@
 					  <div id="uemail_response" class="response"></div>
 					</div>
 					<div class="form-group">
-					  <input type="password" class="form-control" id="pass1" placeholder="Password" name="pass1" required>
+					  <input type="password" class="form-control" id="Password" placeholder="Password" name="pass1" required>
 					</div>
 					<div class="form-group">
-					  <input type="password" class="form-control" id="pass2" placeholder="Confirm Password" name="pass2" required>
+					  <input type="password" class="form-control" id="ConfirmPassword" placeholder="Confirm Password" name="pass2" required>
+					  <div id="msg"></div>
 					</div>
+					
+					
+					
+				
+
 					<div class="checkbox">
 					  <label> <input type="checkbox" name="privacy" required> By creating an account you agree to our <a href="#">Terms & Privacy</a>. </label>
 					</div>
@@ -444,6 +451,7 @@
 					</div>
 					<div class="form-group">
 					  <input type="password" class="form-control" id="pass2" placeholder="Confirm Password" name="pass2" required>
+					  <div id="msg1"></div>
 					</div>
 					<div class="checkbox">
 					  <label> <input type="checkbox" name="privacy" required> By creating an account you agree to our <a href="#">Terms & Privacy</a>. </label>
@@ -553,7 +561,30 @@
 	$(document).ready(function(){
 		$("#Student").css({"display":"block"});
 	});
-  </script>
+  </script>	
+  <script>
+    $(document).ready(function(){
+        $("#ConfirmPassword").keyup(function(){
+             if ($("#Password").val() != $("#ConfirmPassword").val()) {
+                 $("#msg").html("Password do not match").css("color","red");
+             }else{
+                 $("#msg").html("Password matched").css("color","green");
+            }
+      });
+});
+</script> 
+
+<script>
+    $(document).ready(function(){
+        $("#pass2").keyup(function(){
+             if ($("#pass1").val() != $("#pass2").val()) {
+                 $("#msg1").html("Password do not match").css("color","red");
+             }else{
+                 $("#msg1").html("Password matched").css("color","green");
+            }
+      });
+});
+</script> 
   
 </body>
 </html>
