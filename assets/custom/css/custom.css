@@ -88,6 +88,26 @@ body {
   }
 }
 /* Buttons */
+.btn-myTemp,
+.btn-myTemp:active{
+  background-color: #ffffff !important;
+  border-color: #ffffff !important;
+  color: #149dcc !important;
+}
+.btn-myTemp:hover,
+.btn-myTemp:focus,
+.btn-myTemp.focus,
+.btn-myTemp.active {
+  color: #ffffff !important;
+  background-color: #0d6786 !important;
+  border-color: #0d6786 !important;
+}
+.btn-myTemp.disabled,
+.btn-myTemp:disabled {
+  color: #ffffff !important;
+  background-color: #0d6786 !important;
+  border-color: #0d6786 !important;
+}
 .btn {
   font-weight: 500;
   border-width: 2px;
