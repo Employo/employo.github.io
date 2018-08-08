@@ -528,7 +528,7 @@
 					<span class="tablinks runn" onclick="openCity(event, 'Student')" id="signuptb">Students</span> &nbsp; 
 				</div>
 				<div class="col-md-6">
-					<span class="tablinks" onclick="openCity(event, 'Employers')" id="signuptb">Employers</span>
+					<span class="tablinks runn" style="border-bottom: 2px solid #ffffff" onclick="openCity(event, 'Employers')" id="signuptb">Employers</span>
 				</div>
 			</div>
 			
@@ -539,7 +539,7 @@
 				<div class="container">
 				<div id="InsertSuccess"></div>
 				<div id="InsertError"></div>
-					<p>SIGN UP TO EXPLORE JOBS</p>
+					<p style="text-align: center;">Sign Up To Explore Opportunities</p>
 					<hr>
 					
 					<div class="form-group">
@@ -547,12 +547,13 @@
 					  <div id="uemail_response" class="response"></div>
 					</div>
 					<div class="form-group">
-					  <input type="password" class="form-control" id="pass1" placeholder="Password" name="pass1" required>
+					  <input type="password" class="form-control" id="Password" placeholder="Password" name="pass1" required>
 					</div>
 					<div class="form-group">
-					  <input type="password" class="form-control" id="pass2" placeholder="Confirm Password" name="pass2" required>
+					  <input type="password" class="form-control" id="ConfirmPassword" placeholder="Confirm Password" name="pass2" required>
+					  <div id="msg"></div>
 					</div>
-					<div class="checkbox">
+					<div class="checkbox" style="margin-bottom: 18px">
 					  <label> <input type="checkbox" name="privacy" required> By creating an account you agree to our <a href="#">Terms & Privacy</a>. </label>
 					</div>
 					<input type="submit" class="btn btn-primary display-4" name="submit" id="submit" value="Sign Up">
@@ -565,7 +566,7 @@
 				<div class="container">
 				<div id="InsertSuccess"></div>
 				<div id="InsertError"></div>
-					<p>SIGN UP TO HIRE YOUR NEXT INTERN</p>
+					<p style="text-align: center;">Sign Up To Hire Your Next Intern</p>
 					<hr>
 					
 					
@@ -578,8 +579,9 @@
 					</div>
 					<div class="form-group">
 					  <input type="password" class="form-control" id="pass2" placeholder="Confirm Password" name="pass2" required>
+					  <div id="msg1"></div>
 					</div>
-					<div class="checkbox">
+					<div class="checkbox" style="margin-bottom: 18px">
 					  <label> <input type="checkbox" name="privacy" required> By creating an account you agree to our <a href="#">Terms & Privacy</a>. </label>
 					</div>
 					<input type="submit" class="btn btn-primary display-4" name="submit" id="submit" value="Sign Up">
@@ -599,10 +601,10 @@
 			}
 			tablinks = document.getElementsByClassName("tablinks");
 			for (i = 0; i < tablinks.length; i++) {
-				tablinks[i].className = tablinks[i].className.replace(" runn", "");
+				tablinks[i].style.borderBottom = "2px solid #ffffff";
 			}
 			document.getElementById(cityName).style.display = "block";
-			evt.currentTarget.className += " runn";
+			evt.currentTarget.style.borderBottom = "2px solid #37419B";
 		}
 		</script>
 		
@@ -689,7 +691,7 @@
         
 			<div class="container">
 			
-			  <h2>Please provide valid Login</h2>
+			  <h2 style="text-align: center;">Welcome Back!</h2>
 			  <div id="error"></div>
 			  <br>
 			  <form>
@@ -759,6 +761,29 @@
     return true;
 }
   </script>
+  <script>
+    $(document).ready(function(){
+        $("#ConfirmPassword").keyup(function(){
+             if ($("#Password").val() != $("#ConfirmPassword").val()) {
+                 $("#msg").html("Password do not match").css("color","red");
+             }else{
+                 $("#msg").html("Password matched").css("color","green");
+            }
+      });
+});
+</script> 
+
+<script>
+    $(document).ready(function(){
+        $("#pass2").keyup(function(){
+             if ($("#pass1").val() != $("#pass2").val()) {
+                 $("#msg1").html("Password do not match").css("color","red");
+             }else{
+                 $("#msg1").html("Password matched").css("color","green");
+            }
+      });
+});
+</script> 
 
 </body>
 </html>
