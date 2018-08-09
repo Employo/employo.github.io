@@ -2132,7 +2132,7 @@ body {
 	padding-bottom:30px;
 }
 .profile_details > .container {
-	box-shadow:3px 2px 4px gray;
+	box-shadow:1px 2px 4px gray;
 	padding-top:20px;
 	border-top:12px solid #3b5998;
 }

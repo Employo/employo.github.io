@@ -89,13 +89,13 @@
 		
 		<div class="row">
 			<div class="col-md-12">
-				<center><h1 class="" style="color:#37419B;font-family:Acre-Black;font-size:60px;"> Job Position </h1></center>
+				<center><h1 class="" style="color:#37419B;font-family:Acre-Black;letter-spacing: 4.4pt;"> Applications for *insert position* </h1></center>
 			</div>
 		</div>
 		
 		<div class="row" style="text-align:left;">
 			<div class="col-md-12">
-				<a href="employe_posting.html"> <img src="assets/images/arrow-left.png" width="20" id="back_btn"> <span style="color:#37419B;font-family:Acre-Black;"> &nbsp; Back to your posting</span></a><br><br>
+				<a href="employe_posting.html"> <img src="assets/images/arrow-left.png" width="20" id="back_btn"> <span style="color:#37419B;font-family:OpenSans-Regular;"> &nbsp; Back to your posting</span></a><br><br>
 			</div>
 		</div>
 	</div>
@@ -107,7 +107,7 @@
 	<div class="container"><br>
 		<div class="row">
 			<div class="col-md-12">
-				<h4 style="color:#37419B;font-weight:normal;font-family:OpenSans-Regular;;">Applicants sorted according to job criteria match accuracy</h4>
+				<h4 style="color:#37419B;font-weight:normal;font-family:OpenSans-Regular;font-size: 1.0em;">Applicants sorted according to job criteria match accuracy</h4>
 				
 			</div>
 		</div><br>
@@ -136,7 +136,7 @@
 					</div>
 					<div class="col-md-3">
 						
-						<span style="color:orange;"> Applied 20 hrs ago </span> <br><br>
+						<span style="color:#149dcc;"> Applied 20 hrs ago </span> <br><br>
 						<button  id="job_post_btn" class="changText"> <div id="textshow">  Request Interview</div>
 						
 							<div id="textshowchange"> <img src="assets/images/tick.png" id="tickmark" style="width:15px;"> Interview Requested</div>
@@ -145,11 +145,11 @@
 						<br>
 						<button id="job_post_btn" class="pinchange" onclick="myFunction()">
 							<div class="pintext">
-								<img src="assets/images/pin_blue.png" style="width:15px;" id="imgsrc"> &nbsp; <span id="myDIV">PIN</span>
+								<img src="assets/images/pin_blue.png" style="width:15px;" id="imgsrc"> &nbsp; <span id="myDIV">Pin</span>
 							</div>
 						</button>
 						<div style="text-align:right;" id="tabarrow">
-							<img src="assets/images/appdown.png" style="width:50px;cursor:pointer;">
+							<img src="assets/images/appdown.png" style="width:30px;cursor:pointer;">
 						</div>
 					</div>
 				</div>
@@ -159,11 +159,11 @@
 function myFunction() {
     var x = document.getElementById("myDIV");
 	var getimg = document.getElementById("imgsrc");
-    if (x.innerHTML === "PIN") {
-        x.innerHTML = "<img src='assets/images/unpin_blue.png' style='width:15px;'> UNPIN";
+    if (x.innerHTML === "Pin") {
+        x.innerHTML = "<img src='assets/images/unpin_blue.png' style='width:15px;'> Un-Pin";
 		getimg.style.display = "none";
     } else {
-        x.innerHTML = "PIN";
+        x.innerHTML = "Pin";
 		getimg.style.display = "inline-block";
     }
 }
@@ -213,7 +213,7 @@ function myFunction() {
 					</div>
 					<div class="col-md-3">
 						
-						<span style="color:orange;"> Applied 20 hrs ago </span> <br><br>
+						<span style="color:#149dcc;"> Applied 20 hrs ago </span> <br><br>
 						<button id="job_post_btn" class="changTextt"> <div id="textshowt">  Request Interview</div>
 						
 							<div id="textshowchanget"> <img src="assets/images/tick.png" id="tickmark" style="width:15px;"> Interview Requested</div>
@@ -222,11 +222,11 @@ function myFunction() {
 						<br>
 						<button id="job_post_btn" class="pinchange" onclick="myFunctions()">
 							<div class="pintext">
-								<img src="assets/images/pin_blue.png" style="width:15px;" id="imgsrcs"> &nbsp; <span id="myDIVs">PIN</span>
+								<img src="assets/images/pin_blue.png" style="width:15px;" id="imgsrcs"> &nbsp; <span id="myDIVs">Pin</span>
 							</div>
 						</button>
 						<div style="text-align:right;" id="tabarrowtwo">
-							<img src="assets/images/appdown.png" style="width:50px;cursor:pointer;">
+							<img src="assets/images/appdown.png" style="width:30px;cursor:pointer;">
 						</div>
 					</div>
 				</div>
@@ -237,11 +237,11 @@ function myFunction() {
 function myFunctions() {
     var x = document.getElementById("myDIVs");
 	var getimg = document.getElementById("imgsrcs");
-    if (x.innerHTML === "PIN") {
-        x.innerHTML = "<img src='assets/images/unpin_blue.png' style='width:15px;'> UNPIN";
+    if (x.innerHTML === "Pin") {
+        x.innerHTML = "<img src='assets/images/unpin_blue.png' style='width:15px;'> Un-Pin";
 		getimg.style.display = "none";
     } else {
-        x.innerHTML = "PIN";
+        x.innerHTML = "Pin";
 		getimg.style.display = "inline-block";
     }
 }
