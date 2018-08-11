@@ -103,18 +103,22 @@
 				<center><h1 class="" style="color:#37419B;font-family:Acre-Black;font-size:3em; margin-top: 20px;"> SIGN UP </h1></center>
 			</div>
 		</div><br>
+		<div class="row">
+				<div class="col-md-6">
+					<div class="form-group">
+						<label for="first_name" style="font-family:Acre-black;">First Name</label>
+						<input type="text" name="first_name" class="form-control" required> 
+					</div>
+				</div>
+				<div class="col-md-6">
+					<label for="last_name" style="font-family:Acre-black;">Last Name</label>
+					<input type="text" name="last_name" class="form-control" required>
+				</div>
+		</div><br>
 				<div class="row">
 					
 					<div class="col-md-12">
 						<div class="row">
-							<div class="col-md-6">
-								<label for="file" style="font-family:Acre-black;"> Profile Photo </label>
-								<div style="background:#eee;padding:15px;font-family:Acre-black;color:#37419B;text-align:left;"><input type="file" name="profile_img"  id="file"></div>
-								<br>
-							</div>
-							
-							
-							
 							
 							<div class="col-md-6">
 								
@@ -122,10 +126,7 @@
 								<div class="form-group">
 									<label for="university" style="font-family:Acre-black;">University</label>
 									<select class="form-control" id="university" required>
-										
-										
-										
-										
+									
 										<option value="">Acadia University</option>
 										<option value="">University of Alberta</option>
 										<option value="">Algoma University</option>
@@ -186,51 +187,16 @@
 										<option value="">Wilfrid Laurier University</option>
 										<option value="">University of Windsor</option>
 										<option value="">University of Winnipeg</option>
-										<option value="">York University</option>
-										
-										
-										
-										
+										<option value="">York University</option>	
 										
 									</select>
 								</div>
-								
+				
 							</div>
-							
-							
-							
-							
-						</div><br>
-						<div class="row">
-								<div class="col-md-6">
-									<div class="form-group">
-										<label for="first_name" style="font-family:Acre-black;">First Name</label>
-										<input type="text" name="first_name" class="form-control" required> <br>
-										
-									</div>
-								</div>
-								<div class="col-md-6">
-									<label for="last_name" style="font-family:Acre-black;">Last Name</label>
-									<input type="text" name="last_name" class="form-control" required>
-									<br>
-								</div>
-						</div>
-						<div class="row">
-							<div class="col-md-6">
-								
-								<div class="form-group">
-									<label for="grad_year" style="font-family:Acre-Black;">Grad year</label>
-									<select name="grad_year" id="grad_year" class="form-control" required>
-										<option>Grad</option>
-										<option>Grad</option>
-									</select>
-									<br>
-								</div>
-								
-							</div>
+
 							<div class="col-md-6">
 								<div class="form-group">
-									<label for="field" style="font-family:Acre-black;">Field of study.</label>
+									<label for="field" style="font-family:Acre-black;">Field Of Study</label>
 									<select class="form-control" id="field" required>
 										
 										
@@ -285,14 +251,57 @@
 									</select>
 								</div>
 							</div>
+							
+							
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								
+								<div class="form-group">
+									<label for="grad_year" style="font-family:Acre-Black;">Graduation Year</label>
+									<select name="grad_year" id="grad_year" class="form-control" required>
+										<option>Grad</option>
+										<option>Grad</option>
+									</select>
+									
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="gpaScale" style="font-family:Acre-black;">Grading Scale</label>
+									<select class="form-control" id="gpaScale" required>
+										
+										<option value="">Percentage (100%)</option>
+										<option value="">GPA 4.0 Scale</option>
+										<option value="">GPA 12.0 Scale</option>
+										<option value="">Letter Grading (A-F)</option>
+										<option value="">Other</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="gpa" style="font-family:Acre-black;">Cumulative Grade</label>
+									<input type="text" name="gpa" class="form-control" required> 
+									
+								</div>
+							</div>
+							<div class="col-md-6">
+								<label for="file" style="font-family:Acre-black;"> Profile Photo </label>
+								<div style="background:#eee;padding:15px;font-family:Acre-black;color:#37419B;text-align:left;"><input type="file" name="profile_img"  id="file"></div>
+								<br>
+							</div>
 						</div><br>
 						<div class="toggle-content">
-						<h4 style="font-family:Acre-black;color:#464646;"> &nbsp; Where would you like to work?</h4>
+						<h4 style="font-family:Acre-black;color:#464646; text-align: center;">  Where would you like to work?</h4>
 						<br>
 						<div class="col-md-12">
 							<div class="employe-card">
 								<p class="summer-internship">
 									Toronto, ON
+									<span style="color:gray;font-weight:bold;font-family:Acre-black; margin: auto; display: table; margin-top: 4px;"> (Expanding to more Cities soon!)</span>
 								</p>
 							</div>
 						</div>
@@ -302,8 +311,8 @@
 				<br><br>
 				<div class="row">
 					<div class="col-md-12">
-						<h4 style="font-family:Acre-black;color:#464646;"> &nbsp; What type of employment are you seeking?</h4>
-						<span style="color:gray;font-weight:bold;font-family:Acre-black;"> &nbsp; &nbsp; (Can select more than one)</span>
+						<h4 style="font-family:Acre-black;color:#464646; text-align: center;"> What employment season are you job seeking for?</h4>
+						<span style="color:gray;font-weight:bold;font-family:Acre-black; margin: auto; display: table;"> (Can select more than one)</span>
 					</div>
 				</div><br>
 				<div class="row">
