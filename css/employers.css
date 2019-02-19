@@ -1,0 +1,52 @@
+.text-span {
+    color: #52B1E2; /*hsla(200.41666666666666, 71.29%, 60.39%, 1.00);*/
+}
+
+.navbar {
+    color: #4DB0E4;
+}
+
+.section-3 {
+    background-image: url('../images/Employer-Background3x.png');
+}
+
+.button {
+    background-color: #4DB0E4;
+}
+
+.button-2 {
+    background-color: #52B1E2;
+}
+
+.button-3 {
+    background-color: #4DB0E4;
+}
+
+.heading-2 {
+    color: #4DB0E4;
+}  
+
+.heading {
+    margin: -36px 0px 10px;
+    font-size: 56px;
+}
+
+.heading-3 {
+    color: #4DB0E4;
+}
+
+.heading-5 {
+    color: #52B1E2;
+}
+
+.heading-6 {
+    color: #52B1E2;
+}
+
+.heading-7 {
+    color: #4DB0E4;
+}
+
+.heading-8 {
+    color: #4DB0E4;
+}
